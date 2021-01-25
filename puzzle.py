@@ -7,6 +7,8 @@ input_list = ["n a r c i s s i s t ", "s e l f o b s e s s e d ", "i n f e r i o
 bucket_1 = [1, 2, 3, 8, 9, 10, 11, 12, 13, 14, 15]
 
 for i in range(7):
+    for k in range(random.randrange(1,12)):
+        print(chr(random.randrange(97, 97 + 26)), end=" ")
     print(input_list[i], end="")
     left_letters = 27 - len(input_list[i].replace(" ",""))
     for j in range(left_letters):
